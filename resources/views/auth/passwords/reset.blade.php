@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
 
-            <h1 class="title">{{ __('Reset Password') }}</h1>
+            <h1 class="title">Resetta la password</h1>
             <div class="card formStyle">
                 <!-- <div class="card-header">{{ __('Reset Password') }}</div> -->
 
@@ -16,7 +16,7 @@
                         <input type="hidden" name="token" value="{{ $token }}">
 
                         <div class="row mb-5">
-                            <label for="email" class="col-md-12 col-form-label ">{{ __('Email Address') }}</label>
+                            <label for="email" class="col-md-12 col-form-label ">Inserisci l’email</label>
 
                             <div class="col-md-12">
                                 <input id="email" type="email" class="form-control inputForm @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="row mb-5">
-                            <label for="password" class="col-md-12 col-form-label ">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-12 col-form-label ">Inserisci la password</label>
 
                             <div class="col-md-12">
                                 <input id="password" type="password" class="form-control inputForm @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="row mb-5">
-                            <label for="password-confirm" class="col-md-12 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-md-12 col-form-label">Inserisci conferma password</label>
 
                             <div class="col-md-12">
                                 <input id="password-confirm" type="password" class="form-control inputForm" name="password_confirmation" required autocomplete="new-password">
@@ -52,9 +52,9 @@
                         </div>
 
                         <div class="row mb-0">
-                            <div class="col-md-12 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Reset Password') }}
+                            <div class="col-md-12 ">
+                                <button type="submit" class="btn btn-primary loginButton">
+                                    Resetta la password
                                 </button>
                             </div>
                         </div>

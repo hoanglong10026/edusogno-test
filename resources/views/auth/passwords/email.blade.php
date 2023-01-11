@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
 
-            <h1 class="title">{{ __('Reset Password') }}</h1>
+            <h1 class="title">Resetta la password</h1>
             <div class="card formStyle">
 
 
@@ -45,7 +45,7 @@
                         <div class="row mb-0">
                             <div class="col-md-12 center">
                                 <button type="submit" class="btn btn-primary loginButton">
-                                    {{ __('Send Password Reset Link') }}
+                                    Invia collegamento per reimpostare la password
                                 </button>
 
                                 <a class="btn btn-link linkForm" href="{{ route('login') }}">

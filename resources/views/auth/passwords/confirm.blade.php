@@ -4,19 +4,19 @@
 <div class="container">
     <div class="row justify-content-center">
 
-        <h1 class="title">{{ __('Confirm Password') }}</h1>
+        <h1 class="title">Conferma Password</h1>
         <div class="col-md-8">
             <div class="card formStyle">
 
 
                 <div class="card-body">
-                    {{ __('Please confirm your password before continuing.') }}
+                    Si prega di confermare la password prima di continuare
 
                     <form method="POST" action="{{ route('password.confirm') }}">
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-12 col-form-label ">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-12 col-form-label ">Inserisci la password</label>
 
                             <div class="col-md-12">
                                 <input id="password" type="password" class="form-control inputForm @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -32,12 +32,12 @@
                         <div class="row mb-0">
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-primary loginButton">
-                                    {{ __('Confirm Password') }}
+                                    Conferma Password
                                 </button>
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link linkForm" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        Hai dimenticato la password
                                     </a>
                                 @endif
                             </div>
