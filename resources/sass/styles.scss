@@ -1,0 +1,100 @@
+.header {
+    box-shadow: 0px 4px 18px -6px #0057ff !important;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    z-index: 99;
+}
+
+body {
+    background-color: #d9e5f3;
+}
+
+.mainBackground {
+    background-image: url("/images/background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 99.5%;
+    text-align: center;
+    color: #134077;
+    margin-bottom: 22px;
+    margin-top: 80px;
+}
+
+.formStyle {
+    border: 1px solid #134077;
+    border-radius: 19px;
+    padding: 40px;
+}
+
+.col-form-label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 99.5%;
+    color: #231f20;
+}
+
+.inputForm {
+    font-weight: 400;
+    font-size: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #2d224c;
+    padding: 8px 0;
+    border-radius: 0;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        background: none;
+    }
+}
+
+.inputPasswordContainer {
+    position: relative;
+
+    input {
+        padding-right: 50px;
+    }
+
+    img {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+}
+
+.loginButton {
+    background: #0057ff;
+    border-radius: 11px;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.linkForm {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 99.5%;
+    color: #2d224c;
+    text-decoration: none;
+}
+
+.card {
+    max-width: 660px;
+}
