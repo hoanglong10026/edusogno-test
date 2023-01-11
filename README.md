@@ -13,3 +13,6 @@ Run commands below
 - npm run dev
 - php artisan migrate
 - php artisan db:seed
+
+Step 3 : run project 
+- php artisan serv
