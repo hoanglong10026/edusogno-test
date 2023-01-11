@@ -2,7 +2,7 @@ Step 1:
 
 - cp .env.example .env
 
-setup database and Main information in .env file
+setup database and Mail information in .env file
 
 Step 2 : 
 
