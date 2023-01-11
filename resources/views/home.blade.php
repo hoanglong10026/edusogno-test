@@ -2,22 +2,19 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+    <h1 class="titleDashboard">Ciao NOME ecco i tuoi eventi</h1>
 
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+    <div class="d-flex justify-content-center">
+
+    @foreach ($events as $event)
+        <div class=" userCard">
+            <div class="name">{{ $event['nome_evento'] }}</div>
+            <div class="date">{{ date('d-m-Y H:i', strtotime($event['data_evento']))  }}</div>
+            <button class="joinButton">JOIN</button>
         </div>
+    @endforeach
+
     </div>
 </div>
 @endsection

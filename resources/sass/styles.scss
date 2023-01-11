@@ -98,3 +98,56 @@ body {
 .card {
     max-width: 660px;
 }
+
+// dashboard
+
+.titleDashboard {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 99.5%;
+    text-align: center;
+    color: #134077;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.userCard {
+    background: #ffffff;
+    border: 1px solid #134077;
+    border-radius: 19px;
+    padding: 35px 30px;
+    margin: 30px;
+
+    .name {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 99.5%;
+        color: #231f20;
+        margin-bottom: 15px;
+    }
+
+    .date {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 99.5%;
+        color: #cccccc;
+        margin-bottom: 20px;
+    }
+
+    .joinButton {
+        background: #0057ff;
+        border-radius: 11px;
+        height: 60px;
+        width: 100%;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 99.5%;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+}
